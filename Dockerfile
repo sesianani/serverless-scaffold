@@ -14,12 +14,12 @@ RUN npm install serverless -g
 # install other utils
 RUN apt-get update -y && apt-get install -y screen
 
-RUN mkdir /app
+RUN mkdir /src
 
-WORKDIR /app
+WORKDIR /src
 
-ADD requirements.txt /app/
+ADD requirements.txt /src/
 
 RUN pip3 install -r requirements.txt
 
-ADD . /app/
+ADD . /src/
