@@ -38,3 +38,6 @@ jspm_packages
 
 # ignore local.py
 app/config/settings/local.py
+
+# ignore .pyc files
+*.pyc
